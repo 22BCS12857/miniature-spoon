@@ -1,6 +1,13 @@
-# Iterate through all numbers in the given range
-for num in range(1, 11):
-  
-    # check if a number is odd
-    if num % 2 != 0:
-        print(num)
+def oddSum(n) :
+    sum = 0
+    curr = 1
+    i = 0
+    while i < n:
+        sum = sum + curr
+        curr = curr + 2
+        i = i + 1
+    return sum
+
+# Driver Code
+n = 20
+print (" Sum of first" , n, "Odd Numbers is: ",oddSum(n) ) 

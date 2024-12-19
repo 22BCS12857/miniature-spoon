@@ -13,10 +13,7 @@ bool primeornot(int num) {
 }
 
 int main() {
-    int n;
-    cout << "Enter number: ";
-    cin >> n;
-
+    int n=10;
     bool result = primeornot(n);
     if (result) {
         cout << "Prime";
