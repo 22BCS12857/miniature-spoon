@@ -16,6 +16,9 @@ int majority(int arr[], int size) {
 
     // Check for majority element (appears more than size/2 times)
     int crit = size / 2;
+    if(size%2==0){
+        crit=crit+1;
+    }
     for (auto& entry : freqMap) {
         if (entry.second > crit) {
             return entry.first;  // Return the majority element
